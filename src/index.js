@@ -127,11 +127,9 @@ function Pizza({ pizzaObj }) {
 
 function Footer() {
   const hour = new Date().getHours();
-  console.log(hour);
   const openHour = 12;
   const closeHour = 24;
-  const isOpen = hour < openHour && hour < closeHour;
-  console.log(isOpen);
+  const isOpen = hour >= openHour && hour <= closeHour;
 
   // if (hour >= openHour && hour < closeHour) alert("We're currently open!");
   // else alert("Sorry we're closed");
